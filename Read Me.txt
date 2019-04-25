@@ -1,0 +1,19 @@
+Part A
+
+1. Read Image
+2. Spilt into channels
+3. Applying filters to channel with appropiate kernel.
+4. Calculating difference
+5. Displaying image
+
+Part B
+1. Performed all operations in part a till filter
+2. Converting to float32 to avoid under-over flow
+3. Computing G-R and B-R
+4. Applying median blur to GR and BR
+5. Computing G+R and B+R
+6. Converting back to unit8 (abs)
+7. Calculating difference
+8. Displaying images
+
+As we are using kernel filters to interpolate the bayers pixel pattern (by taking some of the color percentage from neighbouring colors). This is the cause of artificats especially on the edges.
